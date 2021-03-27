@@ -226,8 +226,6 @@ head(scores$scores)
 bfi_scores <- cbind(bfi, scores$scores)
 View(bfi_scores)
 
-write.csv(bfi_scores, 'bfi_scores.csv')
-
 # One important note about notation:  
 # we've seen the tilde operator '~' before and it comes up again here. This is used to define 
 # relationships between dependent and independent variables in R. The DV appears on the left of
