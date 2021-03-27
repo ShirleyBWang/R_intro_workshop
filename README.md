@@ -1,5 +1,4 @@
-# R_workshop_mgh
-Introduction to R
+# Introduction to R
 Instructor: Shirley Wang, A.M.
 Dates: March 18 (1 - 2pm ET); March 25 (1 - 2pm ET)
 
