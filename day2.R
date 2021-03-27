@@ -156,7 +156,7 @@ ggplot(data = affect, aes(x = traitanx, y = neur)) +
 # layer 6: customize the theme 
 ggplot(data = affect, aes(x = traitanx, y = neur)) +
   geom_point(color = 'cadetblue4', alpha = 0.8) +
-  geom_smooth(method = 'gam', color = 'darkgrey') +
+  geom_smooth(method = 'gam', color = 'darkgrey', se = FALSE) +
   labs(title = 'Relationship between trait anxiety and neuroticism', 
        x = 'Trait Anxiety', 
        y = 'Neuroticism') +
@@ -226,6 +226,8 @@ head(scores$scores)
 bfi_scores <- cbind(bfi, scores$scores)
 View(bfi_scores)
 
+write.csv(bfi_scores, 'bfi_scores.csv')
+
 # One important note about notation:  
 # we've seen the tilde operator '~' before and it comes up again here. This is used to define 
 # relationships between dependent and independent variables in R. The DV appears on the left of
@@ -240,7 +242,7 @@ boxplot(bfi_scores$age ~ bfi_scores$gender) ## looks pretty identical
 
 # run the test using the t.test function
 ?t.test
-t.test(bfi_scores$age ~ bfi_scores$gender)
+tresults <- t.test(bfi_scores$age ~ bfi_scores$gender)
 
 # what about other variables? 
 t.test(bfi_scores$agree ~ bfi_scores$gender)
