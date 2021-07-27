@@ -1,5 +1,5 @@
 # Introduction to R Workshop: Day 2
-# Date: March 18, 2021
+# Date: August 3, 2021
 # Topics: Data Visualization & Analysis
 # Instructor: Shirley Wang
 

@@ -1,5 +1,5 @@
 # Introduction to R Workshop: Day 1
-# Date: March 18, 2021
+# Date: July 27, 2021
 # Topics: Data Cleaning & Wrangling
 # Instructor: Shirley Wang
 
@@ -297,11 +297,11 @@ msq$nMissing <- nMissing
 View(msq)
 
 ################## PRACTICE! ##################
-# 1. Subset the data frame to only inlcude NA and PA items 
+# 1. Subset the data frame to only include NA and PA items 
 
 
 
-# 2. Using a for loop, create a vector 'complete' that contains TRUE if the particpant has complete
+# 2. Using a for loop, create a vector 'complete' that contains TRUE if the participant has complete
 # data; and FALSE if the participant has any missing data (hint: check out the ifelse() function!)
 
 
